@@ -1,0 +1,1 @@
+export const api = 'https://preca.tecnojr.com.br/'; 

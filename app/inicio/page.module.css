@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  gap: 1em;
+}
+
+.main button {
+  padding: 10px;
+}
+
+.box {
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+}
+
+.box button {
+  padding: 10px 20px 10px 20px
+}
+
+.boxText {
+  margin: 5px;
+}
+
+.boxText ul {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.boxSearch {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.boxSearch input {
+  padding: 7px;
+  border-radius: 50px;
+}
+
+.boxSearch button {
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+}
