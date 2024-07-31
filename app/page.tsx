@@ -16,7 +16,44 @@ export default function Home() {
                     <a href="/login">Entrar</a>
                 </label>
             </div>
-            
+            <div className={styles.BoxTexts}>
+                <div className={styles.titles}>
+                    <h1>Lorem Ipslum</h1>
+                    <h1>Lorem Ipslum</h1>
+                    <h1>Lorem Ipslum</h1>
+                    <h1>Lorem Ipslum</h1>
+                </div>
+                <div className={styles.Texts}>
+                    <p>
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                    </p>
+                </div>
+            </div>
+            <div className={styles.Texts}>
+                    <p>
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                    </p>
+                    <br />
+                    <p>
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                    </p>
+                    <br />
+                    <p>
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                    </p>
+            </div>
         </main>
     )
 }

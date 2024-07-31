@@ -2,11 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  flex-direction: column;
+  margin: 150px auto;
   height: 100vh;
+  gap: 5em;
 }
 
 .links {
+  top: 0;
+  left: 0;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,4 +38,27 @@
   text-decoration: none;
   font-weight: bold;
   color: var(--cor1B);
+}
+
+.BoxTexts {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+
+.titles {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Texts {
+  flex-direction: column;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

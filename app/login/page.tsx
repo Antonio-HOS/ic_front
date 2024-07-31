@@ -3,7 +3,7 @@
 import React from "react"
 import { useState } from "react";
 import axios from "axios"
-import { api } from "./global";
+import { api } from "../global";
 import { BsFillEnvelopeFill } from "react-icons/bs"
 import { BiSolidLockAlt } from "react-icons/bi"
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai"
