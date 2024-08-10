@@ -4,15 +4,24 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Test</h1>
-      <div className={styles.form}>
-        <form action="">
-          <input type="text" placeholder="email"/>
-          <input type="password" placeholder="senha" />
-          <button type="submit">Entrar</button>
-        </form>
-        <a href="/recuperar">Recuperar Senha</a>
+      <h1>Nome do registro</h1>
+      <div className={styles.box}>
+        <h3>Descrição</h3>
+        <p>
+          Lorem Impsulm Lorem Impsulm Lorem Impsulm Lorem Impsulm
+          Lorem ImpsulmLorem ImpsulmLorem ImpsulmLorem ImpsulmLorem Impsulm
+          Lorem ImpsulmLorem ImpsulmLorem ImpsulmLorem ImpsulmLorem Impsulm
+        </p>
+        <h3>Coordenadas</h3>
+        <ul>
+          <li>X: 0000000000000</li>
+          <li>Y: 0000000000000</li>
+        </ul>
+        <img src="/" alt="Imagem"/>
+        <button>Acessar Laudo</button>
+        <button>Acessar Análise</button>
       </div>
+      <button><a href="/inicio">Voltar</a></button>
     </main>
   );  
 }

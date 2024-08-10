@@ -8,7 +8,15 @@
 }
 
 .main button {
-  padding: 10px;
+  background-color: rgb(22, 209, 5);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.main button a {
+  text-decoration: none;
+  color: black;
 }
 
 .box {
@@ -18,11 +26,12 @@
   display: flex;
   gap: 3em;
   align-items: center;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(7, 0, 109);
 }
 
 .box button {
-  padding: 10px 20px 10px 20px
+  background-color: white;
+  padding: 10px 20px 10px 20px;
 }
 
 .boxText {
@@ -35,9 +44,18 @@
 }
 
 .boxSearch {
+  background-color: none;
   display: flex;
   align-items: center;
   gap: 0.5em;
+}
+
+.boxSearch label {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 60px;
+  align-items: center;
+  display: flex;
 }
 
 .boxSearch input {
@@ -46,8 +64,7 @@
 }
 
 .boxSearch button {
-  border-style: none;
-  background-color: rgb(255, 255, 255);
-  width: 30px;
-  height: 30px;
+  border: none;
+  background: none;
+  padding: 0px;
 }

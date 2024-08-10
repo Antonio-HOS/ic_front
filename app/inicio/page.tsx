@@ -3,16 +3,21 @@ import styles from "./page.module.css";
 import { IoSearchCircle } from "react-icons/io5";
 
 export default function Home() {
+  // Fazer botao acessar e implementar caixa de busca
+  // renderizar a pagina com os laudos subidos do usuario logado
+
   return (
     <main className={styles.main}>
       <h1>Test</h1>
       <div className={styles.boxSearch}>
-        <input type="text" name="" id="" placeholder="Digite o nome do registro..." />
-        <button>
-          <IoSearchCircle style={{scale: 3}}/>
-        </button>
+        <label htmlFor="">
+          <input type="text" name="" id="" placeholder="Digite o nome do registro..." />
+          <button>
+            <IoSearchCircle size={40}/>
+          </button>
+        </label>
       </div>
-      <button>Adicionar registro</button>
+      <button><a href="/addRegistro">Adicionar registro</a></button>
       <div className={styles.box}>
         <div className={styles.boxText}>
           <h3>Nome do registro</h3>

@@ -1,1 +1,1 @@
-export const api = 'https://preca.tecnojr.com.br/'; 
+export const api = 'http://127.0.0.1:3000'; 
