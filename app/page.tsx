@@ -18,41 +18,18 @@ export default function Home() {
             </div>
             <div className={styles.BoxTexts}>
                 <div className={styles.titles}>
-                    <h1>Lorem Ipslum</h1>
-                    <h1>Lorem Ipslum</h1>
-                    <h1>Lorem Ipslum</h1>
-                    <h1>Lorem Ipslum</h1>
+                    <h1>Bem vindo ao</h1>
+                    <h2>Aqua Portal</h2>
+                    <h3>Sua base de dados comunitária com auxilio de IA</h3>
                 </div>
                 <div className={styles.Texts}>
                     <p>
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
+                        Temos o intuito de ser a maior comuindade de laudos da região, para auxiliar todos os
+                        analistas, especialistas e as empresas do ramo da qualidade de água, que é necessária para a vida não é mesmo?
+                        Junte-se a nos também, submeta um laudo e contribua para melhores analises da sua região, você está salvando não 
+                        somente o planeta, mas vidas também, e cada ato conta, contribua, ou consuma é importante que você também seja auxiliado no que deseja!
                     </p>
                 </div>
-            </div>
-            <div className={styles.Texts}>
-                    <p>
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                    </p>
-                    <br />
-                    <p>
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                    </p>
-                    <br />
-                    <p>
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                        Lorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem IpslumLorem Ipslum
-                    </p>
             </div>
         </main>
     )

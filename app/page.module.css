@@ -3,9 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 150px auto;
   height: 100vh;
-  gap: 5em;
 }
 
 .links {
@@ -41,22 +39,29 @@
 }
 
 .BoxTexts {
-  width: 70vw;
+  width: 60vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10em;
+  gap: 2em;
 }
 
 .titles {
   width: 40%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
+}
+
+.titles h2 {
+  font-size: 60px;
 }
 
 .Texts {
   flex-direction: column;
+  font-size: 20px;
+  text-align: justify;
   width: 50vw;
   display: flex;
   align-items: center;

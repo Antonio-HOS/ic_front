@@ -4,12 +4,12 @@
   --background-end-rgb: 255, 255, 255;
 
   --text-color: #fafafa;
-	--background-color: #dfdfdf;
+	--background-color: #1aa4e4;
 	--cor1: rgb(34, 0, 128);
 	--cor1B: rgb(46, 79, 242);
 	--cor2: rgb(95, 183, 81);
-	--cor3: rgb(50, 50, 50);
-	--cor4: #7d7b7b;
+	--cor3: rgb(144, 164, 207);
+	--cor4: #ffffff;
 }
 
 * {
@@ -25,7 +25,6 @@ body {
 }
 
 body {
-	color: var(--text-color);
 	background: var(--background-color);
 }
 
