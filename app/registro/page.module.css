@@ -15,12 +15,21 @@
   padding: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: rgb(0, 0, 95);
+  background-color: rgb(194, 194, 226);
   text-align: justify;
 }
 
 .box ul {
   padding-left: 10px;
+}
+
+.box a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: var(--cor1B);
+  border-radius: 2px;
 }
 
 .main button {
@@ -35,4 +44,16 @@
 .box button {
   padding: 10px;
   width: 200px;
+}
+
+.Sair {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  background-color: rgb(0, 38, 255);
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }

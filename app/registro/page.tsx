@@ -1,9 +1,21 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
+
+  const router = useRouter()
+
+  const goBack = () => {
+    router.back();
+  };
+
   return (
     <main className={styles.main}>
+      
+      <button className={styles.Sair} onClick={goBack}>Voltar</button>
       <h1>Nome do registro</h1>
       <div className={styles.box}>
         <h3>Descrição</h3>
@@ -17,11 +29,9 @@ export default function Home() {
           <li>X: 0000000000000</li>
           <li>Y: 0000000000000</li>
         </ul>
-        <img src="/" alt="Imagem"/>
-        <button>Acessar Laudo</button>
-        <button>Acessar Análise</button>
+        <a href="/" target="blank">Acessar Laudo</a>
+        <a href="/" target="blank">Acessar Análise</a>
       </div>
-      <button><a href="/inicio">Voltar</a></button>
     </main>
   );  
 }

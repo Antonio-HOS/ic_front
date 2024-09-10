@@ -7,6 +7,18 @@
   gap: 1em;
 }
 
+.Sair {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  background-color: rgb(231, 10, 10) !important;
+  padding: 10px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .main button {
   background-color: rgb(22, 209, 5);
   padding: 10px 20px 10px 20px;
@@ -26,7 +38,7 @@
   display: flex;
   gap: 3em;
   align-items: center;
-  background-color: rgb(7, 0, 109);
+  background-color: rgb(227, 226, 252);
 }
 
 .box button {
