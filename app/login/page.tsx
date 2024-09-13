@@ -36,11 +36,11 @@ export default function Home() {
             };
 
             // Faça uma solicitação HTTP com o token no header
-            const response = await axios.get('/inicial', config);
-            router.push("/inicial")
+            const response = await axios.get('/inicio', config);
+            router.push("/inicio")
             // Se a solicitação for bem-sucedida, navegue para a outra página
             if (response.status === 200) {
-                router.push("/inicial")
+                router.push("/inicio")
             }
         } catch (error) {
             console.error('Erro ao fazer a solicitação com token:', error);
