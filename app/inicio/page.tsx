@@ -1,14 +1,35 @@
 "use client"
 
-import Image from "next/image";
-import styles from "./page.module.css";
-import { IoSearchCircle } from "react-icons/io5";
-import { useRouter } from 'next/navigation'
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import axios from 'axios';
+import styles from './page.module.css';
 
 export default function Home() {
-  // Fazer botao acessar e implementar caixa de busca
-  // renderizar a pagina com os laudos subidos do usuario logado
-  const router = useRouter()
+  const [records, setRecords] = useState([]);
+  const router = useRouter();
+
+  // Fetch the records when the component is loaded
+  useEffect(() => {
+    const fetchRecords = async () => {
+      // Get the token from localStorage
+      const token = localStorage.getItem('token');
+
+      try {
+        const res = await axios.get('http://127.0.0.1:8000/Record/', {
+          headers: {
+            'Authorization': `Token ${token}`,  // Corrected token concatenation
+          },
+        });
+        setRecords(res.data.Records);  // Assuming the API returns a list of records
+      } catch (error) {
+        console.error('Error fetching records:', error);
+        setRecords([]);
+      }
+    };
+
+    fetchRecords();
+  }, []);
 
   const goBack = () => {
     router.back();
@@ -23,18 +44,45 @@ export default function Home() {
       <button className={styles.Sair} onClick={goBack}>Sair</button>
       <h1>Bem Vindo, Usuario!</h1>
       <button><a href="/addRegistro">Adicionar registro</a></button>
-      <div className={styles.box}>
-        <div className={styles.boxText}>
-          <h3>Nome do registro</h3>
-          <p>Descrição</p>
-          <h4>Coordenadas</h4>
-          <ul>
-            <li>X: 0000000000000</li>
-            <li>Y: 0000000000000</li>
-          </ul>
-        </div>
-        <button onClick={goLaudo}>Acessar</button>
-      </div>
+
+      {/* Render the list of records */}
+      {records.length > 0 ? (
+        records.map((record) => (
+          <div key={record.id} className={styles.box}>
+            <div className={styles.boxText}>
+              <h3>{record.title}</h3>
+              <p>{record.description}</p>
+              <h4>Arquivos</h4>
+              <ul>
+                {/* Check for the existence of each file and render its link */}
+                {record.arq && (
+                  <li>
+                    <a href={record.arq} target="_blank" rel="noopener noreferrer">
+                      Arquivo Enviado
+                    </a>
+                  </li>
+                )}
+                {record.returned_arq && (
+                  <li>
+                    <a href={record.returned_arq} target="_blank" rel="noopener noreferrer">
+                      Arquivo Retornado
+                    </a>
+                  </li>
+                )}
+                {record.excel && (
+                  <li>
+                    <a href={record.excel} target="_blank" rel="noopener noreferrer">
+                      Arquivo Excel
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+        ))
+      ) : (
+        <p>Não há registros disponíveis.</p>
+      )}
     </main>
   );
 }

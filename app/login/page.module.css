@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+.mainContent a {
+  color: white;
+}
+
 .titulo {
   display: flex;
   align-items: start;
@@ -80,6 +84,7 @@
   background-color: rgb(31, 32, 32);
   color: whitesmoke;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .ajuda {

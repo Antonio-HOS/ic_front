@@ -6,6 +6,10 @@
   height: 100vh;
 }
 
+.mainContent a {
+  color: white;
+}
+
 .titulo {
   display: flex;
   align-items: start;

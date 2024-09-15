@@ -39,7 +39,7 @@ export default function Home() {
         try {
             const response = await axios.post(api + "/Register/", userData);
 
-            if (response.status === 200 || response.status === 201) {
+            if (response.status == 200) {
                 // Cadastro realizado com sucesso, redirecionar para página de login
                 toast.success("Cadastro realizado com sucesso!");
                 router.push("/login");

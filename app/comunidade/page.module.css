@@ -37,3 +37,63 @@ gap: 0.1em;
   word-wrap: break-word;
   text-align: justify;
 }
+
+.box {
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  background-color: rgb(227, 226, 252);
+}
+
+.box button {
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+.boxText {
+  margin: 5px;
+}
+
+.boxText ul {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--cor4);
+  gap: 10em;
+  text-decoration: none;
+}
+
+.links label {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--cor3);
+  transition: 0.5s;
+}
+
+.links label:hover {
+  transition: 0.5s;
+  background-color: var(--background-color);
+}
+
+.links label a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor1B);
+}

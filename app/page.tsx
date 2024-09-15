@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <main className={styles.mainContent}>
             <div className={styles.links}>
-                <h1>Aqua Portal</h1>
+                <h1><a href="/">Aqua Portal</a></h1>
                 <label htmlFor="page">
                     <a href="/comunidade">Comunidade</a>
                 </label>
@@ -26,7 +26,7 @@ export default function Home() {
                     <p>
                         Temos o intuito de ser a maior comuindade de laudos da região, para auxiliar todos os
                         analistas, especialistas e as empresas do ramo da qualidade de água, que é necessária para a vida não é mesmo?
-                        Junte-se a nos também, submeta um laudo e contribua para melhores analises da sua região, você está salvando não 
+                        Junte-se a nos também, submeta um laudo e contribua para melhores analises da sua região, você está salvando não
                         somente o planeta, mas vidas também, e cada ato conta, contribua, ou consuma é importante que você também seja auxiliado no que deseja!
                     </p>
                 </div>

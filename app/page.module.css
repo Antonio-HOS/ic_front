@@ -38,6 +38,10 @@
   color: var(--cor1B);
 }
 
+.links h1 a {
+  text-decoration: none;
+}
+
 .BoxTexts {
   width: 60vw;
   display: flex;

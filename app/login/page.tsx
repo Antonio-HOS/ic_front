@@ -9,6 +9,7 @@ import { BiSolidLockAlt } from "react-icons/bi"
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai"
 import { useRouter } from 'next/navigation'
 import styles from "./page.module.css"
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
     const router = useRouter()
@@ -50,11 +51,13 @@ export default function Home() {
     const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        const data = {
+            username: username,
+            password: password,
+        }
+
         try {
-            const response = await axios.post(api + 'login', {
-                username: username,
-                password: password,
-            });
+            const response = await axios.post(api + '/login', data);
 
             if (response.data.token) {
                 localStorage.setItem('token', response.data.token);
@@ -62,7 +65,8 @@ export default function Home() {
                 irParaOutraPaginaComToken();
             }
         } catch (error) {
-            console.error('Erro durante a autenticação:', error);
+            toast.error("Ocorreu um erro durante o login. Verifique os dados e tente novamente.");
+            console.error("Erro no cadastro:", error);
             // toast.error("Email ou senha incorretos!");
         }
     };
@@ -109,13 +113,14 @@ export default function Home() {
                             </button>
                         )}
                     </label>
-                    <button id="login">Entrar</button>
+                    <button type="submit" id="login">Entrar</button>
                     <div className={styles.ajuda}>
                         <a href="/cadastro">Cadastro</a>
                         <a href="/recuperar">Redefinir Senha</a>
-                        <a href="/help">Precisa de Ajuda?</a>
+                        <a href="/">Início</a>
                     </div>
                 </form>
+                <Toaster /> {/* Componente para exibir os toasts */}
             </div>
         </main>
     )
