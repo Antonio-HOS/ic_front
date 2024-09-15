@@ -91,6 +91,7 @@ export default function Home() {
           </label>
           <button type="submit" id="login">Registrar</button>
         </form>
+        <Toaster /> {/* Componente para exibir os toasts */}
       </div>
     </main>
   );

@@ -130,8 +130,8 @@ export default function Home() {
                     </label>
                     <button type="submit" className={styles.btnCadastrar}>Cadastrar</button>
                     <div className={styles.ajuda}>
-                        <a href="/">Login</a>
-                        <a href="/help">Precisa de Ajuda?</a>
+                        <a href="/">Início</a>
+                        <a href="/login">Login</a>
                     </div>
                 </form>
                 <Toaster /> {/* Componente para exibir os toasts */}

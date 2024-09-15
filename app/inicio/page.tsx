@@ -46,7 +46,7 @@ export default function Home() {
       <button><a href="/addRegistro">Adicionar registro</a></button>
 
       {/* Render the list of records */}
-      {records.length > 0 ? (
+      {records && records.length > 0 ? (
         records.map((record) => (
           <div key={record.id} className={styles.box}>
             <div className={styles.boxText}>
@@ -55,24 +55,17 @@ export default function Home() {
               <h4>Arquivos</h4>
               <ul>
                 {/* Check for the existence of each file and render its link */}
-                {record.arq && (
+                {record.arq_url && (
                   <li>
-                    <a href={record.arq} target="_blank" rel="noopener noreferrer">
+                    <a href={record.arq_url} target="_blank" rel="noopener noreferrer">
                       Arquivo Enviado
                     </a>
                   </li>
                 )}
-                {record.returned_arq && (
+                {record.returned_arq_url && (
                   <li>
-                    <a href={record.returned_arq} target="_blank" rel="noopener noreferrer">
+                    <a href={record.returned_arq_url} target="_blank" rel="noopener noreferrer">
                       Arquivo Retornado
-                    </a>
-                  </li>
-                )}
-                {record.excel && (
-                  <li>
-                    <a href={record.excel} target="_blank" rel="noopener noreferrer">
-                      Arquivo Excel
                     </a>
                   </li>
                 )}

@@ -116,7 +116,6 @@ export default function Home() {
                     <button type="submit" id="login">Entrar</button>
                     <div className={styles.ajuda}>
                         <a href="/cadastro">Cadastro</a>
-                        <a href="/recuperar">Redefinir Senha</a>
                         <a href="/">Início</a>
                     </div>
                 </form>
