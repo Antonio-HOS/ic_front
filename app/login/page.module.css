@@ -4,6 +4,7 @@
   justify-content: center;
   margin: 0 auto;
   height: 100vh;
+  background-image: url('/background/fundo.png');
 }
 
 .mainContent a {
@@ -16,6 +17,8 @@
   width: 100%;
   flex-direction: column;
   border-right: 2px solid #fff2;
+  margin-right: 30px;
+  border-right: 2px solid rgba(255, 255, 255, 0.2); 
 }
 
 .titulo h1 {
@@ -31,13 +34,15 @@
 }
 
 .login{
-  background: rgb(50, 50, 50);
+  background-color: #333840;
   border: 1px solid #fff2;
   border-radius: 20px;
   color: #fff;
   padding: 40px;
   display: flex;
   gap: 20px;
+  animation: fadeIn 0.5s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .login form h2{
@@ -79,6 +84,8 @@
   padding: 0.5em;
   padding-left: 1em;
   gap: 1em;
+  background-color: #3D434D;
+  border-radius: 10px;
 }
 
 .login form label input {
@@ -91,7 +98,7 @@
 }
 
 .button{
-  background-color: #007acc;
+  background-color: #007BFF;
   color: #fff;
   padding: 0.8rem 1.2rem;
   width: 100%;
@@ -102,10 +109,12 @@
   margin-top: 10px;
   transition: background-color 0.3s ease;
   margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.3);
 }
 
 .login form button:hover {
-  background-color: #005f99;
+  background-color: #005BB5;
 }
 
 .ajuda {
@@ -120,17 +129,16 @@
   font-size: 0.9rem;
   padding: 0.5em 1em;
   background-color: transparent;
-  color: #007acc;
+  color: #007BFF;
   text-decoration: none;
-  border: 2px solid #007acc;
-  border-radius: 4px;
+  border: 1px solid #007acc;
+  border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .ajuda a:hover {
-  background-color: #007acc;
-  color: #fff;
+  background-color: #E6F2FF;
 }
 
 
@@ -150,4 +158,10 @@
   padding: 8px;
   width: 100%;
   outline: none;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
