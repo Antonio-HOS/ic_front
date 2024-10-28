@@ -165,7 +165,7 @@ export default function Home() {
 
       </button>
       <div className="flex justify-center flex-col items-center">
-        <div className="flex justify-center flex-col md:flex-row self-center items-center mt-5 md:mt-0">
+        <div className="flex justify-center flex-col-reverse md:flex-row self-center items-center mt-2 md:mt-0">
           <h1 className="text-3xl text-center font-abel ">
             Bem Vindo a Comunidade !
           </h1>

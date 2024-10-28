@@ -65,7 +65,7 @@ export default function Home() {
         <ArrowLeft className="w-8 h-8" />
       </button>
       <div
-        className={`${styles.login} w-[95%] md:w-1/2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black`}
+        className={`${styles.login} w-[95%] transition-all duration-300 hover:shadow-2xl md:w-1/2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black`}
       >
         <div className="lg:flex flex-col items-center justify-center w-full border-r-2 border-r-white border-opacity-20 mr-8 hidden">
           <Image
