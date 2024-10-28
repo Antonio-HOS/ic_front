@@ -75,21 +75,23 @@ export default function Home() {
         <main className={styles.mainContent}>
             <div className={styles.login}>
                 <div className={styles.titulo}>
-                    <h1>Aqua<br></br>Portal</h1>
+                    <h1>Aqua Portal</h1>
                     <p>Finding the pure water</p>
                 </div>
                 <form onSubmit={handleLogin}>
+                <h2>Login</h2>
                     <label htmlFor="username" className={styles.caixa}>
                         <div>
                             <BsFillEnvelopeFill size={20} />
                         </div>
-                        <input type="text" name="username" id="username" placeholder="Usuário" onChange={(e) => setUsername(e.target.value)} />
+                        <input className={styles.input} type="text" name="username" id="username" placeholder="Usuário" onChange={(e) => setUsername(e.target.value)} />
                     </label>
                     <label htmlFor="password" className={styles.caixa}>
                         <div>
                             <BiSolidLockAlt size={20} />
                         </div>
                         <input
+                            className={styles.input}
                             type={isPasswordShown ? "text" : "password"}
                             name="password"
                             id="password"
@@ -113,10 +115,10 @@ export default function Home() {
                             </button>
                         )}
                     </label>
-                    <button type="submit" id="login">Entrar</button>
+                    <button className={styles.button} type="submit" id="login">Entrar</button>
                     <div className={styles.ajuda}>
-                        <a href="/cadastro">Cadastro</a>
                         <a href="/">Início</a>
+                        <a href="/cadastro">Cadastro</a>
                     </div>
                 </form>
                 <Toaster /> {/* Componente para exibir os toasts */}
