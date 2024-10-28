@@ -23,11 +23,11 @@
 
 .background {
   height: 100vh; 
-  background-image: url('/background/fundo.png');
+  /* background-image: url('/background/fundo.png');
   background-size: cover;
   background-position: center;  
   background-repeat: no-repeat; 
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 

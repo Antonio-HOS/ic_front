@@ -10,11 +10,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main
-      className={`flex items-center  justify-center flex-col h-screen  ${styles.background}`}
+      className={`flex items-center  lg:justify-center flex-col h-screen  `}
     >
       <Header />
-      <div className="w-3/5 flex items-center justify-center gap-8">
-        <div className="w-2/5 flex flex-col items-center justify-center space-y-[-28px]">
+      <div className="flex h-16"></div>
+      <div className="w-full lg:w-3/5 flex items-center lg:justify-center gap-8 flex-col lg:flex-row pb-7">
+        <div className="w-full lg:w-2/5 flex flex-col items-center justify-center space-y-[-28px] mt-32">
           <h1 className="text-3xl  abel">Bem vindo ao</h1>
           <Image
             className="drop-shadow-2xl"
@@ -24,14 +25,14 @@ export default function Home() {
             height={250}
           />
           <div className="flex flex-col justify-center">
-            <h3 className="abel text-xl w-72">Sua base de dados comunitária</h3>
+            <h3 className="abel text-xl ">Sua base de dados comunitária</h3>
             <div className="flex justify-center space-x-4">
               <h3 className="abel text-xl flex">com auxílio de IA</h3>
               <BrainCircuit className="w-8 h-8" />
             </div>
           </div>
         </div>
-        <div className="flex flex-col text-lg text-justify w-2/3 abel space-y-4 items-center">
+        <div className="flex flex-col text-lg text-justify w-full px-3  lg:px-0 lg:w-2/3 abel space-y-4 items-center">
           <p>
             Nosso propósito é construir a maior comunidade de laudos da região,
             dedicando-se a apoiar analistas, especialistas e empresas que atuam

@@ -1,15 +1,14 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 
-  --text-color: #fafafa;
+	--text-color: #fafafa;
 	--background-color: #1aa4e4;
 	--cor1: rgb(34, 0, 128);
 	--cor1B: rgb(46, 79, 242);
@@ -28,10 +27,19 @@ html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
+
+
+
 }
 
 body {
 	background: var(--background-color);
+	height: 100vh;
+	background-image: url('../public/background/fundo.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 input,

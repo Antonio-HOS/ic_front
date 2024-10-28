@@ -1,4 +1,4 @@
-.mainContent{
+/* .mainContent{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,4 +108,181 @@
   color: white;
   font-weight: bold;
   cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.background {
+  height: 100vh; 
+  /* background-image: url('/background/fundo.png');
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed; */
+}
+
+.mainContent{
+  height: 100vh; 
+
+}
+
+/* .mainContent a {
+  color: white;
+} */
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  border-right: 2px solid #fff2;
+  margin-right: 30px;
+  border-right: 2px solid rgba(255, 255, 255, 0.2); 
+}
+
+.titulo h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.titulo p {
+  text-align: center;
+}
+
+.login{
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff2;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 0.5s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login form h2{
+  margin-bottom: 15px;
+}
+
+.login form label .togglePassword {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  background-color: none;
+}
+
+.login form label .togglePassword:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.login form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em 1em;
+  width: 100%;
+  padding: 1em;
+  gap: 0.5em;
+}
+
+.login form label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.5em;
+  padding-left: 1em;
+  gap: 1em;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.login form label input {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.button{
+  background-color: #007BFF;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.login form button:hover {
+  background-color: #005BB5;
+}
+
+.ajuda {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color:var(--cor1);
+}
+
+.ajuda a {
+  padding: 0.5em 1em;
+  font-size: 0.9rem;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  color: #007BFF;
+  text-decoration: none;
+  border: 1px solid #007acc;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ajuda a:hover {
+  background-color: #E6F2FF;
+}
+
+
+.caixa {
+  border-radius: 3px;
+  background-color: rgb(67, 67, 67);
+  border-color: rgb(187, 186, 186);
+  width: 100%;
+  height: max-content;
+}
+
+.input {
+  background: none;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

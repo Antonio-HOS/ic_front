@@ -6,18 +6,28 @@
   padding: 6rem;
 }
 
+
+.background {
+  height: 100vh;
+  /* background-image: url('/background/fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
 .list {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
-
+/* 
 .list ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-gap: 0.1em;
+  gap: 0.1em;
 }
 
 .list ul li {
@@ -29,8 +39,8 @@ gap: 0.1em;
   padding: 10px 500px 10px 500px;
   background-color: white;
   border-radius: 2px;
-  word-wrap: break-word; /* Break long words */
-  overflow-wrap: break-word; /* Ensure content fits */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .list ul li p {
@@ -96,4 +106,4 @@ gap: 0.1em;
   text-decoration: none;
   font-weight: bold;
   color: var(--cor1B);
-}
+} */

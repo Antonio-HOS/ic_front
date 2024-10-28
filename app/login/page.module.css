@@ -1,19 +1,20 @@
 .mainContent{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 100vh;
+  height: 100vh; 
   background-image: url('/background/fundo.png');
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
 }
 
-.mainContent a {
+/* .mainContent a {
   color: white;
-}
+} */
 
 .titulo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   flex-direction: column;
   border-right: 2px solid #fff2;
@@ -29,15 +30,13 @@
 }
 
 .titulo p {
-  color: #fff;
   text-align: center;
 }
 
 .login{
-  background-color: #333840;
+  background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #fff2;
   border-radius: 20px;
-  color: #fff;
   padding: 40px;
   display: flex;
   gap: 20px;
@@ -46,7 +45,6 @@
 }
 
 .login form h2{
-  font-size: 25px;
   margin-bottom: 15px;
 }
 
@@ -70,7 +68,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  color: rgb(255, 255, 255);
   padding: 0.5em 1em;
   width: 100%;
   padding: 1em;
@@ -84,7 +81,7 @@
   padding: 0.5em;
   padding-left: 1em;
   gap: 1em;
-  background-color: #3D434D;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -99,7 +96,6 @@
 
 .button{
   background-color: #007BFF;
-  color: #fff;
   padding: 0.8rem 1.2rem;
   width: 100%;
   border: none;
@@ -152,8 +148,6 @@
 
 .input {
   background: none;
-  border: none;
-  color: white;
   font-size: 14px;
   padding: 8px;
   width: 100%;
