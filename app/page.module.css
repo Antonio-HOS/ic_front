@@ -1,3 +1,4 @@
+
 .mainContent{
   display: flex;
   align-items: center;
@@ -19,6 +20,17 @@
   gap: 10em;
   text-decoration: none;
 }
+
+.background {
+  height: 100vh; 
+  background-image: url('/background/fundo.png');
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+
 
 .links label {
   padding: 20px;

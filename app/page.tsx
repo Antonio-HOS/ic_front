@@ -1,33 +1,59 @@
-"use client"
+"use client";
 
-import React from "react"
-import styles from "./page.module.css"
+import React from "react";
+import { Header } from "@/componentes/header";
+import Image from "next/image";
+import styles from "./page.module.css";
+import { BrainCircuit } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
-    return (
-        <main className="flex items-center justify-center flex-col h-screen">
-            <div className="fixed top-0 left-0 flex items-center justify-center w-full h-20 bg-[#4a90e2] gap-40">
-                <h1>
-                    <a href="/" className="text-[#333333] no-underline">Aqua Portal</a>
-                </h1>
-                <a href="/comunidade" className="bg-[#f5f5f5] p-5 rounded-lg transition duration-500 hover:bg-[#e0e0e0]">Comunidade</a>
-                <a href="/login" className="bg-[#f5f5f5] p-5 rounded-lg transition duration-500 hover:bg-[#e0e0e0]">Entrar</a>
+  return (
+    <main
+      className={`flex items-center  justify-center flex-col h-screen  ${styles.background}`}
+    >
+      <Header />
+      <div className="w-3/5 flex items-center justify-center gap-8">
+        <div className="w-2/5 flex flex-col items-center justify-center space-y-[-28px]">
+          <h1 className="text-3xl  abel">Bem vindo ao</h1>
+          <Image
+            className="drop-shadow-2xl"
+            src="/logos/logo.png"
+            alt="Logo"
+            width={250}
+            height={250}
+          />
+          <div className="flex flex-col justify-center">
+            <h3 className="abel text-xl w-72">Sua base de dados comunitária</h3>
+            <div className="flex justify-center space-x-4">
+              <h3 className="abel text-xl flex">com auxílio de IA</h3>
+              <BrainCircuit className="w-8 h-8" />
             </div>
-            <div className="w-3/5 flex items-center justify-center gap-8">
-                <div className="w-2/5 flex flex-col items-start justify-center">
-                    <h1>Bem vindo ao</h1>
-                    <h2 className="text-6xl">Aqua Portal</h2>
-                    <h3>Sua base de dados comunitária com auxílio de IA</h3>
-                </div>
-                <div className="flex flex-col text-lg text-justify w-1/2">
-                    <p>
-                        Temos o intuito de ser a maior comunidade de laudos da região, para auxiliar todos os
-                        analistas, especialistas e as empresas do ramo da qualidade de água, que é necessária para a vida, não é mesmo?
-                        Junte-se a nós também, submeta um laudo e contribua para melhores análises da sua região; você está salvando não
-                        somente o planeta, mas vidas também, e cada ato conta. Contribua, ou consuma; é importante que você também seja auxiliado no que deseja!
-                    </p>
-                </div>
+          </div>
+        </div>
+        <div className="flex flex-col text-lg text-justify w-2/3 abel space-y-4 items-center">
+          <p>
+            Nosso propósito é construir a maior comunidade de laudos da região,
+            dedicando-se a apoiar analistas, especialistas e empresas que atuam
+            na área de qualidade da água — um recurso essencial para a vida.
+          </p>
+          <p>
+            Convidamos você a se juntar a nós! Submeta um laudo e ajude a
+            aprimorar as análises em sua comunidade. Com sua colaboração, você
+            estará contribuindo não apenas para a preservação do planeta, mas
+            também para a proteção de vidas. Cada gesto conta!
+          </p>
+          <p>
+            Participe, consuma com consciência e saiba que estamos aqui para
+            auxiliá-lo em suas necessidades!
+          </p>
+          <Link href={"/login"}>
+            <div className="bg-gradient-to-r from-[#1791c8] to-purple-500 hover:shadow-2xl hover:scale-125 shadow-sm transition-all duration-300 rounded-2xl w-40 py-2 flex justify-center">
+              <p className="text-center text-white">Entrar</p>
             </div>
-        </main>
-    );
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
 }
