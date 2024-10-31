@@ -98,7 +98,7 @@ export default function Home() {
         </div>
         <form onSubmit={handleLogin}>
           <h2 className="text-3xl">Login</h2>
-          <label htmlFor="username" className={styles.caixa}>
+          <label htmlFor="username" className={`${styles.caixa}`}>
             <div>
               <BsFillEnvelopeFill size={20} />
             </div>

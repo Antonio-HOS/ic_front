@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <div className="flex h-16"></div>
       <div className="w-full lg:w-3/5 flex items-center lg:justify-center gap-8 flex-col lg:flex-row pb-7">
-        <div className="w-full lg:w-2/5 flex flex-col items-center justify-center space-y-[-28px] mt-32 md:mt-0">
+        <div className="w-full lg:w-2/5 flex flex-col items-center justify-center space-y-[-32px] mt-32 md:mt-0">
           <h1 className="text-3xl  abel">Bem vindo ao</h1>
           <Image
             className="drop-shadow-2xl"

@@ -137,7 +137,7 @@
 }
 
 .login {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255);
   border: 1px solid #fff2;
   border-radius: 20px;
   padding: 40px;
@@ -184,7 +184,7 @@
   padding: 0.5em;
   padding-left: 1em;
   gap: 1em;
-  background-color: #ffffff;
+  background-color: #e3e3e3;;
   border-radius: 10px;
 }
 
